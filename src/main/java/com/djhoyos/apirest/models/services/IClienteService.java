@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import com.djhoyos.apirest.models.entity.Cliente;
+import com.djhoyos.apirest.models.entity.Region;
 
 public interface IClienteService {
 	public List<Cliente> findAll();
@@ -16,5 +17,7 @@ public interface IClienteService {
 	
 	public Cliente save(Cliente cliente);
 	
-	public void delete(int id);
+	public void delete(int id);	
+
+	public List<Region>findAllRegiones();
 }
